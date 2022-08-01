@@ -1,0 +1,18 @@
+name: Github Actions Example
+
+on:
+  pull_request:
+  push:
+    branches: 
+      - master
+      
+
+jobs:
+  test:
+    name: Running Units Tests
+    runs-on: linux-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: index.html
+     
